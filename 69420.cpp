@@ -5,7 +5,7 @@ int genRandomNumber(){
     int randomNumber{0};
     int max{99999};
     int min{10000};
-    int range = max - min;
+    int range{max - min};
     int count{0};
     while(randomNumber != 69420) {
         randomNumber = (std::rand() % range + min);
