@@ -6,7 +6,7 @@ int genRandomNumber(){
     int max = 99999;
     int min = 10000;
     int range = max - min;
-    int count;
+    int count{0};
     while(randomNumber != 69420) {
         randomNumber = (std::rand() % range + min);
         count++;
