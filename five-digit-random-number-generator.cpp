@@ -20,10 +20,10 @@ int genRandomNumber(int numberEnteredByUser) {
 	std::srand((unsigned)time(0));
 	int randomNumber{};
 	int max{100000};
-    int min{10000};
+	int min{10000};
 	int range{max - min};
 	int count{0};
-	while (randomNumber != numberEnteredByUser) {
+	while(randomNumber != numberEnteredByUser) {
 		randomNumber = (std::rand() % range + min);
 		count++;
 		std::cout << "Iteration: " << count << "    " << "Current Value: " << randomNumber << '\r' << std::flush;
